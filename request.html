@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro AI - Crop Recommendation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to Agro AI Crop Recommendation</h1>
+        <p>Get personalized crop recommendations for your location!</p>
+
+        <button id="initiateButton" onclick="initiateRecommendation()">Initiate Crop Recommendation</button>
+
+        <div id="confirmationPrompt" class="hidden">
+            <p>Do you want crop recommendations from the Agro AI System?</p>
+            <button id="yesButton" onclick="getRecommendations()">Yes</button>
+            <button id="noButton" onclick="cancelRecommendation()">No</button>
+        </div>
+
+        <div id="result" class="hidden">
+            <h2>Crop Recommendations</h2>
+            <p>Your personalized crop recommendations will be displayed here.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
