@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro AI - Analyze Soil Conditions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Analyze Soil Conditions</h1>
+        <form id="soilForm">
+            <label for="soilType">Soil Type:</label>
+            <input type="text" id="soilType" placeholder="Enter soil type (e.g., sandy, loamy, clayey)" required>
+
+            <label for="phLevel">Soil pH Level:</label>
+            <input type="text" id="phLevel" placeholder="Enter soil pH level" required>
+
+            <label for="nutrientContent">Nutrient Content:</label>
+            <input type="text" id="nutrientContent" placeholder="Enter nutrient content (e.g., nitrogen, phosphorus, potassium)" required>
+
+            <button type="button" onclick="validateSoilData()">Submit</button>
+        </form>
+
+        <div id="errorMessages" class="hidden">
+            <h2>Error Messages</h2>
+            <ul id="errorList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
